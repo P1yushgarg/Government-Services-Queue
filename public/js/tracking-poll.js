@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const form=$('#track-form');if(!form)return;let timer=null;form.addEventListener('submit',()=>{if(!timer)timer=setInterval(()=>{form.dataset.polling='true';form.requestSubmit();delete form.dataset.polling},12000)})});
